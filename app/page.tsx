@@ -1,3 +1,4 @@
+import Articles from "@/components/Articles"
 import DriveRevelvant from "@/components/DriveRevelvant"
 import HowItWork from "@/components/HowItWork"
 import Integrate from "@/components/Integrate"
@@ -22,6 +23,7 @@ function page() {
       <Integrate/>
       <Testmenails/>
       <TheEndLess/>
+      <Articles/>
     </div>
   )
 }
