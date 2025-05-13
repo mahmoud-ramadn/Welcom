@@ -1,9 +1,12 @@
 import Articles from "@/components/Articles"
 import DriveRevelvant from "@/components/DriveRevelvant"
+import ExepricenWelcom from "@/components/ExepricenWelcom"
 import HowItWork from "@/components/HowItWork"
 import Integrate from "@/components/Integrate"
+import JoinUs from "@/components/JoinUs"
 import MakeOtherPlatform from "@/components/MakeOtherPlatform"
 import PoweredBy from "@/components/PoweredBy"
+import Signup from "@/components/Signup"
 import Testmenails from "@/components/Testmenails"
 import TheEndLess from "@/components/TheEndLess"
 import TheExperince from "@/components/TheExperince"
@@ -24,6 +27,9 @@ function page() {
       <Testmenails/>
       <TheEndLess/>
       <Articles/>
+      <JoinUs/>
+      <Signup/>
+      <ExepricenWelcom/>
     </div>
   )
 }

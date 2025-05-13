@@ -1,5 +1,6 @@
 import TheHeader from '@/components/TheHeader';
 import './globals.css'
+import Footer from '@/components/Footer';
 export default function RootLayout({
   children,
 }: {
@@ -10,6 +11,7 @@ export default function RootLayout({
       <body className=" pt-8 text-white">
        <TheHeader/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
