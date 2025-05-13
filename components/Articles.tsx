@@ -97,9 +97,9 @@ function Articles() {
                             variants={itemVariants}
                             custom={article.delay}
                             whileHover={{ y: -5 }}
-                            className="group rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                            className="group rounded-tr-[48px] overflow-hidden  hover:shadow-md transition-all duration-300"
                         >
-                            <div className="relative h-64 md:h-72 w-full overflow-hidden rounded-t-xl">
+                            <div className="relative h-64 md:h-72 w-full overflow-hidden rounded-tr-xl">
                                 <Image
                                     src={article.image}
                                     alt={article.title}
@@ -111,7 +111,7 @@ function Articles() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                             </div>
 
-                            <div className="p-6 bg-white">
+                            <div className="p-6 ">
                                 <Button
                                     variant="outline"
                                     className="mb-4 rounded-full px-4 py-1 text-xs font-medium border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-gray-300"
