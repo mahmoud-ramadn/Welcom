@@ -63,7 +63,7 @@ const secondRow = reviews.slice(Math.ceil(reviews.length / 2));
 const ReviewCard = ({
     img,
 }: {
-    img: any;
+    img:string;
 }) => {
     return (
         <figure

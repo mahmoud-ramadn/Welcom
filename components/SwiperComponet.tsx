@@ -1,7 +1,7 @@
 // components/SwiperComponent.js
 // components/SwiperComponent.js
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+import { Navigation,  A11y, Autoplay } from 'swiper/modules';
 import avater  from "@/public/avater.png";
 import  logo from "@/public/integ1 (1).png";
 import { useRef } from 'react';
@@ -75,7 +75,7 @@ export default function SwiperComponent() {
                 {[1, 2, 3, 4, 5].map((item) => (
                     <SwiperSlide key={item} className=" md:pt-10 pt-5 md:pr-10 pr-5 w-full mt-[79px] relative overflow-hidden rounded-tr-[48px] border-r border-t border-white/20   ">
                         <div className="">  
-                          <p className=' md:text-2xl text-sm text-white'>"We chose Welcome because it’s intuitive, beautifully designed, and made for attendee interaction, making it the perfect way to uplevel our experiences. The Slack-like chat, on-stage Q&A, and polling has increased audience engagement."</p>
+                          <p className=' md:text-2xl text-sm text-white'>&quot;We chose Welcome because it’s intuitive, beautifully designed, and made for attendee interaction, making it the perfect way to uplevel our experiences. The Slack-like chat, on-stage Q&A, and polling has increased audience engagement.&quot;</p>
                             <div className=' flex items-start gap-x-6 mt-10'>
                             <Image src={avater} alt='avater' className=' shrink-0 object-cover'/>
                             <div >
