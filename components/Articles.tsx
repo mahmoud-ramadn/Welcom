@@ -57,8 +57,8 @@ function Articles() {
                                     src={article.image}
                                     alt={article.title}
                                     fill
-                                    className="object-cover rounded-tr-[48px] group-hover:scale-105 transition-transform duration-300"
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    className="object-cover w-full rounded-tr-[48px] group-hover:scale-105 transition-transform duration-300"
+                                   
                                 />
                             </div>
 

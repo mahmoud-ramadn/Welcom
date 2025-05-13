@@ -1,53 +1,52 @@
 function TheEndLess() {
-  return (
-    <div className=" bg-black  py-20 overflow-hidden">
-        <div className=" container">
-            <div className=" flex items-center leading-none">
-                 <div className=" leading-none">
-                      <p className="  md:text-[44px] text-[30px] text-end">One</p> <p className=" md:text-[44px] text-[30px]">platform</p>
-                 </div>
-                  <h1 className=" md:text-[127px] sm:text-[100px]  text-[60px] text-white">Endless</h1>
-            </div>
-              <h1 className=" md:text-[127px] sm:text-[100px] text-[60px] text-white text-end  leading-none" >Oportunities</h1>
+      const useCases = [
+            "Webinars",
+            "Company Meetings",
+            "Virtual Conferences",
+            "Product Launches",
+            "Training Sessions",
+            "Hybrid Events",
+            "Customer Onboarding",
+            "Team Building"
+      ];
 
-              <div className=" mt-22">
-                <div className=" border-t  border-gray-600 py-6 flex  items-center   justify-evenly">
+      return (
+            <section className="bg-black py-16 md:py-24 overflow-hidden">
+                  <div className="container px-4">
+                        {/* Headline Section */}
+                        <div className="flex flex-col md:flex-row items-center leading-none mb-8 md:mb-12">
+                              <div className="md:mr-4 mb-4 md:mb-0">
+                                    <p className="text-3xl md:text-[44px] text-white/80 text-end">One</p>
+                                    <p className="text-3xl md:text-[44px] text-white/80">platform</p>
+                              </div>
+                              <h2 className="text-6xl sm:text-[100px] md:text-[127px] text-white font-bold leading-none">
+                                    Endless
+                              </h2>
+                        </div>
 
-                      <p className=" text-3xl  text-white/65 w-full text-center">Webinars</p>
-                      <p className=" text-3xl  text-white/65  text-center w-full">Company Meetings</p>
+                        <h2 className="text-6xl sm:text-[100px] md:text-[127px] text-white font-bold text-end leading-none mb-12 md:mb-20">
+                              Opportunities
+                        </h2>
 
-                </div>
-                <div className=" border-t  border-gray-600 py-6 flex  items-center   justify-evenly">
-
-                      <p className=" text-3xl  text-white/65 w-full text-center">Webinars</p>
-                      <p className=" text-3xl  text-white/65  text-center w-full">Company Meetings</p>
-
-                </div>
-                <div className=" border-t  border-gray-600 py-6 flex  items-center   justify-evenly">
-
-                      <p className=" text-3xl  text-white/65 w-full text-center">Webinars</p>
-                      <p className=" text-3xl  text-white/65  text-center w-full">Company Meetings</p>
-
-                </div>
-                <div className=" border-t  border-gray-600 py-6 flex  items-center   justify-evenly">
-
-                      <p className=" text-3xl  text-white/65 w-full text-center">Webinars</p>
-                      <p className=" text-3xl  text-white/65  text-center w-full">Company Meetings</p>
-
-                </div>
-                <div className=" border-t  border-gray-600 py-6 flex  items-center   justify-evenly">
-
-                      <p className=" text-3xl  text-white/65 w-full text-center">Webinars</p>
-                      <p className=" text-3xl  text-white/65  text-center w-full">Company Meetings</p>
-
-                </div>
-
-
-
-              </div>
-        </div>
-    </div>
-  )
+                        {/* Use Cases List */}
+                        <div className="mt-12 space-y-0">
+                              {useCases.map((useCase, index) => (
+                                    <div
+                                          key={index}
+                                          className="border-t border-gray-700 py-6 flex flex-col md:flex-row items-center justify-evenly hover:bg-gray-900/50 transition-colors duration-300 group"
+                                    >
+                                          <p className="text-xl md:text-3xl text-white/65 w-full text-center group-hover:text-white/90 transition-colors duration-300">
+                                                {useCase}
+                                          </p>
+                                          <p className="text-xl md:text-3xl text-white/65 w-full text-center  group-hover:text-white/90 transition-colors duration-300">
+                                                {index % 2 === 0 ? "Webinars" : "Company Meetings"}
+                                          </p>
+                                    </div>
+                              ))}
+                        </div>
+                  </div>
+            </section>
+      );
 }
 
-export default TheEndLess
+export default TheEndLess;
